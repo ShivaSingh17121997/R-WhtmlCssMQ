@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Product Page</title>
+    <style>
+        .home {
+            background-color: rgb(38, 38, 38);
+            color: white;
+            cursor: pointer;
+            padding: 5px;
+            transition: background-color 0.3s;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .product-container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            margin-top: 20px;
+        }
+
+        .product-details {
+            margin-left: 20px;
+        }
+
+        .product-image img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .product-price {
+            font-size: 20px;
+            margin-top: 10px;
+        }
+
+        .product-rating {
+            margin-top: 10px;
+        }
+
+        .add-to-cart {
+            margin-top: 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .add-to-cart:hover {
+            background-color: #0056b3;
+        }
+
+        .proceed-to-payment {
+            margin-top: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .proceed-to-payment:hover {
+            background-color: #218838;
+        }
+
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar ul li {
+            margin-left: 20px;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: #000;
+            font-size: 16px;
+        }
+
+        .navbar-icons {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar-icons a {
+            margin-left: 20px;
+            color: #000;
+            font-size: 18px;
+            text-decoration: none;
+        }
+
+        .navbar-icons a:hover {
+            color: #ffd700;
+        }
+
+        @media (max-width: 768px) {
+            .navbar h1 {
+                font-size: 20px;
+            }
+
+            .navbar ul li {
+                margin-left: 10px;
+            }
+
+            .navbar-icons a {
+                margin-left: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <h1>Gadgets Zone</h1>
+        <ul>
+            <li><a href="/Home.html">Home</a></li>
+            <li><a href="/Product.html">Products</a></li>
+            <li><a href="Cart.html">Cart</a></li>
+        </ul>
+        <div class="navbar-icons">
+            <a href="#"><i class="fa fa-search"></i></a>
+            <a href="#"><i class="fa fa-shopping-cart"></i></a>
+        </div>
+    </nav>
+    <div class="home">
+        <h1>Products page</h1>
+    </div>
+
+    <div class="product-container">
+        <div class="product-image">
+            <img src="/Assets/photo-1578319439584-104c94d37305.avif"
+                alt="product page image">
+        </div>
+        <div class="product-details">
+            <h1>Product Name</h1>
+            <p>Description of the product goes here. This could be a brief overview of the product features and
+                benefits.</p>
+            <p class="product-price">$99.99</p>
+            <div class="product-rating">
+                <!-- Assuming you have a rating system -->
+                Rating: <span>4.5</span>/5
+            </div>
+            <button class="add-to-cart">Add to Cart ></button>
+            <button class="proceed-to-payment">Proceed to Payment ></button>
+        </div>
+    </div>
+
+</body>
+
+</html>

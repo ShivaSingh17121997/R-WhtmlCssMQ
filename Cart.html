@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        .product-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #ccc;
+            padding: 10px 0;
+        }
+
+        .product-item img {
+            max-width: 100px;
+            height: auto;
+            margin-right: 20px;
+        }
+
+        .product-details {
+            text-align: left;
+        }
+
+        .product-price {
+            font-weight: bold;
+        }
+
+        .total-price {
+            font-size: 1.2em;
+            margin-top: 20px;
+        }
+
+        .checkout-btn {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .checkout-btn:hover {
+            background-color: #0056b3;
+        }
+
+        .home {
+            background-color: rgb(38, 38, 38);
+            color: white;
+            cursor: pointer;
+            padding: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar ul li {
+            margin-left: 20px;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: #000;
+            font-size: 16px;
+        }
+
+        .navbar-icons {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar-icons a {
+            margin-left: 20px;
+            color: #000;
+            font-size: 18px;
+            text-decoration: none;
+        }
+
+        .navbar-icons a:hover {
+            color: #ffd700;
+        }
+
+        @media (max-width: 768px) {
+            .navbar h1 {
+                font-size: 20px;
+            }
+
+            .navbar ul li {
+                margin-left: 10px;
+            }
+
+            .navbar-icons a {
+                margin-left: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <h1>Gadgets Zone</h1>
+        <ul>
+            <li><a href="/Home.html">Home</a></li>
+            <li><a href="/Product.html">Products</a></li>
+            <li><a href="Cart.html">Cart</a></li>
+        </ul>
+        <div class="navbar-icons">
+            <a href="#"><i class="fa fa-search"></i></a>
+            <a href="#"><i class="fa fa-shopping-cart"></i></a>
+        </div>
+    </nav>
+    <div class="home">
+        <h1>Products page</h1>
+    </div>
+    <div class="container">
+        <h1>Checkout</h1>
+        <div class="product-item">
+            <img src="https://img.freepik.com/free-photo/creative-reels-composition_23-2149711507.jpg?size=626&ext=jpg"
+                alt="Product 1">
+            <div class="product-details">
+                <h2>Product Name 1</h2>
+                <p>Quantity: 1</p>
+                <p class="product-price">$19.99</p>
+            </div>
+        </div>
+        <div class="product-item">
+            <img src="https://m.media-amazon.com/images/I/61qJX973fRL._AC_UF1000,1000_QL80_.jpg" alt="Product 2">
+            <div class="product-details">
+                <h2>Product Name 2</h2>
+                <p>Quantity: 2</p>
+                <p class="product-price">$29.99 each</p>
+            </div>
+        </div>
+        <div class="total-price">
+            Total: $79.97
+        </div>
+        <button class="checkout-btn">Proceed to Payment</button>
+    </div>
+</body>
+
+</html>
